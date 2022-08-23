@@ -89,7 +89,9 @@
     </div>
     <!--       modal show     -->
     <div
-      class="w-1/3 gradient bg-clip-border border-transparent rounded-xl mx-auto border-8"
+      id="modal"
+      style="display: none"
+      class="w-full sm:w-4/5 md:w-2/3 xl:w-1/3 gradient absolute left-1/2 -translate-x-1/2 top-1/2 lg:-translate-y-1/2 shadow-lg bg-clip-border border-transparent rounded-xl border-8"
     >
       <div class="bg-white space-y-4 p-8">
         <div class="flexible-divs">
@@ -100,12 +102,12 @@
           <p>Balance:</p>
           <p><span id="balance">00</span>tk</p>
         </div>
-        <div class="flexible-divs">
+        <div class="flexible-divs flex-col sm:flex-row gap-3 sm:gap-0">
           <span class="flex gap-3"
             ><p>Save:</p>
-            <input class="w-32" type="text" />%</span
+            <input id="saving-amount" class="w-32" type="text" />%</span
           >
-          <button class="btn px-4">Save</button>
+          <button class="btn px-4" id="save-btn">Save</button>
         </div>
         <div class="flexible-divs">
           <p>Savings:</p>
@@ -117,5 +119,6 @@
         </div>
       </div>
     </div>
+    <script src="./script.js"></script>
   </body>
 </html>
